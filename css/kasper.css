@@ -6,7 +6,6 @@
 }
 
 /* End Variables */
-
 /* Start Global Rules */
 * {
   -webkit-box-sizing: border-box;
@@ -57,7 +56,6 @@ ul {
 }
 
 /* End Global Rules */
-
 /* Start Components */
 .main-heading {
   text-align: center;
@@ -132,7 +130,7 @@ header .container::after {
   left: 15px;
 }
 
-header logo img {
+header .logo img {
   height: 40px;
 }
 
@@ -143,7 +141,7 @@ header nav {
   justify-content: flex-end;
 }
 
-nav i.toggle-menu {
+header nav .toggle-menu {
   color: white;
   font-size: 22px;
 }
@@ -156,8 +154,6 @@ nav i.toggle-menu {
 
 header nav ul {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 @media(width<=767px) {
@@ -165,12 +161,12 @@ header nav ul {
     display: none;
   }
 
-  nav i.toggle-menu:hover+ul {
+  header nav .toggle-menu:hover+ul {
     display: flex;
     flex-direction: column;
     position: absolute;
     top: 100%;
-    left: 0 !important;
+    left: 0;
     width: 100%;
     background-color: rgb(0 0 0 / 50%);
   }
@@ -215,12 +211,11 @@ header nav .form i {
 }
 
 /* End Header */
-
 /* Start Landing */
 .landing {
   min-height: 100vh;
   background-color: #1f2021;
-  background-image: url(../images/landing.jpg);
+  background-image: url("../images/landing.jpg");
   background-size: cover;
   position: relative;
 }
@@ -236,8 +231,8 @@ header nav .form i {
 
 .landing .text {
   position: absolute;
-  top: 50%;
   left: 0;
+  top: 50%;
   transform: translateY(-50%);
   width: 50%;
   padding: 50px;
@@ -246,8 +241,6 @@ header nav .form i {
   display: flex;
   justify-content: flex-end;
 }
-
-
 
 .landing .text .content {
   max-width: 500px;
@@ -279,7 +272,7 @@ header nav .form i {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  color: white;
+  color: #ddd;
 }
 
 @media(width<=767px) {
@@ -318,7 +311,6 @@ header nav .form i {
 }
 
 /* End Landing */
-
 /* Start Services */
 .services {
   padding-top: var(--section-padding);
@@ -329,14 +321,13 @@ header nav .form i {
   .services .services-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-    column-gap: 40px;
-    row-gap: 60px;
+    grid-column-gap: 40px;
+    grid-row-gap: 60px;
   }
 }
 
 .services .serv-box {
   display: flex;
-
 }
 
 .services .serv-box i {
@@ -366,7 +357,6 @@ header nav .form i {
 }
 
 /* End Services */
-
 /* Start Design */
 .design {
   padding-top: var(--section-padding);
@@ -381,7 +371,7 @@ header nav .form i {
 }
 
 .design::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -525,7 +515,6 @@ header nav .form i {
 }
 
 /* End Portfolio */
-
 /* Start Video */
 .video {
   position: relative;
@@ -575,7 +564,6 @@ header nav .form i {
 }
 
 /* End Video */
-
 /* Start About */
 .about {
   padding-top: var(--section-padding);
@@ -598,7 +586,6 @@ header nav .form i {
 }
 
 /* End About */
-
 /* Start Stats */
 .stats {
   padding-top: var(--section-padding);
@@ -671,7 +658,6 @@ header nav .form i {
 }
 
 /* End Stats */
-
 /* Start Skills */
 .our-skills {
   padding-top: var(--section-padding);
@@ -805,7 +791,6 @@ header nav .form i {
 }
 
 /* End Skills */
-
 /* Start Quote */
 .quote {
   padding-top: var(--section-padding);
@@ -838,7 +823,6 @@ header nav .form i {
 }
 
 /* End Quote */
-
 /* Start Pricing */
 .pricing {
   padding-top: var(--section-padding);
@@ -935,7 +919,6 @@ header nav .form i {
 }
 
 /* End Pricing */
-
 /* Start Subscribe */
 .subscribe {
   padding-top: var(--section-padding);
@@ -1022,7 +1005,6 @@ header nav .form i {
 }
 
 /* End Subscribe */
-
 /* Start Contact */
 .contact {
   padding-top: var(--section-padding);
@@ -1117,7 +1099,6 @@ header nav .form i {
 }
 
 /* End Contact */
-
 /* Start Footer */
 .footer {
   padding-top: calc(var(--section-padding) / 2);
